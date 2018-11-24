@@ -2,18 +2,11 @@ nav {
   height: 60px;
 }
 
-.nav-desktop {
-  display: flex;
+.presentation {
+  height: 100vh;
+  margin-top: -60px;
 }
 
-@media screen and (max-width: 640px) {
-  .nav-desktop {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 641px) {
-  .nav-mobile {
-    display: none;
-  }
+.btnn:hover {
+  background-color: #000;
 }
