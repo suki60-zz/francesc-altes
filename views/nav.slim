@@ -1,18 +1,18 @@
 nav.d-flex.justify-content-between
   .nav-logo.d-flex.align-items-center
     .pl-3
-      object.f-clef data="/svg/f-clef.svg" type="image/svg+xml"
+      img.clef src="/svg/fa.svg"
   .nav-desktop.d-none.d-sm-flex
-    .nav-about.d-flex.align-items-center.px-3
-      .
-        | about
-    .nav-works.d-flex.align-items-center.px-3
-      .
+    .nav-home.d-flex.align-items-center.px-4
+      .nav-link
+        | home
+    .nav-work.d-flex.align-items-center.px-4
+      .nav-link
+        | work
+    .nav-resume.d-flex.align-items-center.px-4
+      .nav-link
         | résumé
-    .nav-contact.d-flex.align-items-center.px-3
+    .nav-contact.d-flex.align-items-center.px-4
       .
         a.btn.btn-outline-dark href="#" role="button"
-          | contact me
-  .nav-mobile.d-flex.d-sm-none.align-items-center.px-3
-    .
-      i.fas.fa-bars
+          | contact
