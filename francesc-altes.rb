@@ -12,5 +12,6 @@ configure :development do
 end
 
 get '/' do
+  @path = :home
   slim :home
 end
