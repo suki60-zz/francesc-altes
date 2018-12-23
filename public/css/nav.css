@@ -4,6 +4,10 @@ nav {
   font-family:
 }
 
+nav a:hover {
+  text-decoration: line-through;
+}
+
 .presentation {
   height: 100vh;
   margin-top: -150px;

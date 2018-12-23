@@ -9,14 +9,25 @@ nav.d-flex.justify-content-between
           del
             | home
         - else
-          | home
+          a href="/home"
+            | home
     .nav-work.d-flex.align-items-center.px-4
       .nav-link
-        | work
+        - if @path == :work
+          del
+            | work
+        - else
+          a href="/work"
+            | work
     .nav-resume.d-flex.align-items-center.px-4
       .nav-link
-        | résumé
+        - if @path == :contact
+          del
+            | contact
+        - else
+          a href="/contact"
+            | contact
     .nav-contact.d-flex.align-items-center.px-4
       .
-        a.btn.btn-outline-dark href="#" role="button"
-          | contact
+        a.btn.btn-outline-dark href="https://drive.google.com/file/d/1nwCIO5VrO07pJjSOyiufbSOEIdkS7CjA/view?usp=sharing" target="_blank" role="button"
+          | résumé
