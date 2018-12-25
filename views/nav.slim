@@ -2,8 +2,8 @@ nav.d-flex.justify-content-between
   .nav-logo.d-flex.align-items-center
     .pl-3
       img.clef src="/svg/fa.svg"
-  .nav-desktop.d-none.d-sm-flex
-    .nav-home.d-flex.align-items-center.px-4
+  .nav-desktop.d-none.d-md-flex
+    .nav-home.d-flex.align-items-center.px-3
       .nav-link
         - if @path == :home
           del
@@ -11,7 +11,7 @@ nav.d-flex.justify-content-between
         - else
           a href="/home"
             | home
-    .nav-resume.d-flex.align-items-center.px-4
+    .nav-resume.d-flex.align-items-center.px-3
       .nav-link
         - if @path == :contact
           del
@@ -19,7 +19,7 @@ nav.d-flex.justify-content-between
         - else
           a href="/contact"
             | about & contact
-    .nav-work.d-flex.align-items-center.px-4
+    .nav-work.d-flex.align-items-center.px-3
       .nav-link
         - if @path == :work
           del
@@ -27,7 +27,7 @@ nav.d-flex.justify-content-between
         - else
           a href="/work"
             | work
-    .nav-contact.d-flex.align-items-center.px-4
+    .nav-contact.d-flex.align-items-center.px-3
       .
         a.btn.btn-outline-dark href="https://drive.google.com/file/d/1oYLm99i0zxS89ny-iMu5vfDVh_NDV1B2/view?usp=sharing" target="_blank" role="button"
           | résumé
