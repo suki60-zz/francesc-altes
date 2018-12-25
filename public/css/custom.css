@@ -35,3 +35,7 @@ a:hover {
   background-color: #000;
   border-color: #000;
 }
+
+.bg-black {
+  background-color: #000;
+}
