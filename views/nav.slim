@@ -11,6 +11,14 @@ nav.d-flex.justify-content-between
         - else
           a href="/home"
             | home
+    .nav-resume.d-flex.align-items-center.px-4
+      .nav-link
+        - if @path == :contact
+          del
+            | about & contact
+        - else
+          a href="/contact"
+            | about & contact
     .nav-work.d-flex.align-items-center.px-4
       .nav-link
         - if @path == :work
@@ -19,14 +27,6 @@ nav.d-flex.justify-content-between
         - else
           a href="/work"
             | work
-    .nav-resume.d-flex.align-items-center.px-4
-      .nav-link
-        - if @path == :contact
-          del
-            | contact
-        - else
-          a href="/contact"
-            | contact
     .nav-contact.d-flex.align-items-center.px-4
       .
         a.btn.btn-outline-dark href="https://drive.google.com/file/d/1oYLm99i0zxS89ny-iMu5vfDVh_NDV1B2/view?usp=sharing" target="_blank" role="button"
