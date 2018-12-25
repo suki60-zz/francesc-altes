@@ -20,14 +20,3 @@ nav a:hover {
     width: 36px;
   }
 }
-
-@media (max-width: 575.98px) {
-  nav {
-    height: 50px;
-    padding: 0 1rem;
-  }
-
-  .clef {
-    width: 24px;
-  }
-}
