@@ -2,5 +2,6 @@
   .contact {
     height: 100vh;
     margin-top: -150px;
+    display: flex;
     align-items: center;
 }
