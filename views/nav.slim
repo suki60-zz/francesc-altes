@@ -32,33 +32,33 @@ nav.d-flex.justify-content-between
         a.btn.btn-outline-dark href="https://drive.google.com/file/d/1oYLm99i0zxS89ny-iMu5vfDVh_NDV1B2/view?usp=sharing" target="_blank" role="button"
           | résumé
   .nav-mobile.d-flex.d-md-none.align-items-center
-    .nav-mobile-icon-bars
+    #nav-mobile-icon-bars.nav-mobile-icon-bars
       i.fas.fa-bars.fa-2x
-    .nav-mobile-icon-times
+    #nav-mobile-icon-times.nav-mobile-icon-times
       i.fas.fa-times.fa-2x
-.nav-dropdown.justify-content-between.align-items-center
+#nav-dropdown.nav-dropdown.justify-content-center.align-items-center
   .
-    .
+    .py-3.text-center
       - if @path == :home
         del
           | home
       - else
         a href="/home"
           | home
-    .
+    .py-3.text-center
       - if @path == :contact
         del
           | about & contact
       - else
         a href="/contact"
           | about & contact
-    .
+    .py-3.text-center
       - if @path == :work
         del
           | work
       - else
         a href="/work"
           | work
-    .
+    .py-3.text-center
       a.btn.btn-outline-dark href="https://drive.google.com/file/d/1oYLm99i0zxS89ny-iMu5vfDVh_NDV1B2/view?usp=sharing" target="_blank" role="button"
         | résumé

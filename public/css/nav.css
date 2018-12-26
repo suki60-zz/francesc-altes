@@ -3,7 +3,8 @@ nav {
   padding: 0 3rem;
 }
 
-nav a:hover {
+nav a:hover,
+.nav-dropdown a:hover {
   text-decoration: line-through;
 }
 
