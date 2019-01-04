@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 require 'sinatra'
 
 if development?
-  require "sinatra/reloader"
+  require 'sinatra/reloader'
   require 'pry'
-  require "better_errors"
+  require 'better_errors'
 end
 
 configure :development do
@@ -12,7 +14,7 @@ configure :development do
 end
 
 before do
-  @path = request.path_info.gsub(/\//,'').to_sym
+  @path = request.path_info.delete(%r{\/}).to_sym
 end
 
 get '/' do
