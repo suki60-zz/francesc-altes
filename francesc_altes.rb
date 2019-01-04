@@ -14,7 +14,7 @@ configure :development do
 end
 
 before do
-  @path = request.path_info.delete(%r{\/}).to_sym
+  @path = request.path_info.delete('/').to_sym
 end
 
 get '/' do
