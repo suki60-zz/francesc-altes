@@ -1,1 +1,1 @@
-web: bundle exec ruby francesc-altes.rb
+web: bundle exec ruby app.rb
