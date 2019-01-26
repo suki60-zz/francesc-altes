@@ -1,7 +1,8 @@
 nav.d-flex.justify-content-between
   .nav-logo.d-flex.align-items-center
     .pl-lg-3
-      img.clef src="/svg/fa.svg"
+      a href='/home'
+        img.clef src="/svg/fa.svg"
   .nav-desktop.d-none.d-md-flex
     .nav-home.d-flex.align-items-center.px-4
       .
@@ -52,13 +53,13 @@ nav.d-flex.justify-content-between
       - else
         a href="/contact"
           | about & contact
-    .py-3.text-center
-      - if @path == :work
-        del
-          | work
-      - else
-        a href="/work"
-          | work
+    / .py-3.text-center
+    /   - if @path == :work
+    /     del
+    /       | work
+    /   - else
+    /     a href="/work"
+    /       | work
     .py-3.text-center
       a.btn.btn-outline-dark href="https://drive.google.com/file/d/1oYLm99i0zxS89ny-iMu5vfDVh_NDV1B2/view?usp=sharing" target="_blank" role="button"
         | résumé
