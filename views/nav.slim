@@ -19,14 +19,14 @@ nav.d-flex.justify-content-between
         - else
           a href="/contact"
             | about & contact
-    .nav-work.d-flex.align-items-center.px-4
-      .
-        - if @path == :work
-          del
-            | work
-        - else
-          a href="/work"
-            | work
+    / .nav-work.d-flex.align-items-center.px-4
+    /   .
+    /     - if @path == :work
+    /       del
+    /         | work
+    /     - else
+    /       a href="/work"
+    /         | work
     .nav-contact.d-flex.align-items-center.px-4
       .
         a.btn.btn-outline-dark href="https://drive.google.com/file/d/1oYLm99i0zxS89ny-iMu5vfDVh_NDV1B2/view?usp=sharing" target="_blank" role="button"

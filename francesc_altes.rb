@@ -25,9 +25,9 @@ get '/home' do
   slim :home
 end
 
-get '/work' do
-  slim :work
-end
+# get '/work' do
+#   slim :work
+# end
 
 get '/contact' do
   slim :contact
